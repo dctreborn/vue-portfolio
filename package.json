@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0",
-    "deploy-pages": "quasar build && push-dir --dir=dist/spa --remote=origin --branch=gh-pagesy"
+    "deploy-pages": "quasar build && push-dir --dir=dist/spa --remote=origin --branch=gh-pages"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
