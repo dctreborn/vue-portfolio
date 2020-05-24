@@ -13,6 +13,7 @@
     "deploy-pages": "quasar build && push-dir --dir=dist/spa --remote=origin --branch=gh-pages"
   },
   "dependencies": {
+    "@quasar/cli": "^1.0.7",
     "@quasar/extras": "^1.0.0",
     "quasar": "^1.0.0"
   },
