@@ -7,15 +7,14 @@
           dense
           round
           @click="leftDrawerOpen = !leftDrawerOpen"
-          icon="menu"
+          icon="fas fa-bars"
           aria-label="Menu"
         />
 
-        <q-toolbar-title>
-          Quasar App test
+        <q-toolbar-title class="absolute-center">
+          Portfolio and Resume
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
