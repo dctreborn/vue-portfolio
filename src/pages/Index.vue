@@ -29,9 +29,11 @@
         </q-card-section>
         <q-card-actions class="absolute-bottom">
           <q-btn
-            v-for="(label, index) in buttonLabels"
+            v-for="(btn, index) in buttonLabels"
+            dense
             :key="index"
-            :label="label"
+            :label="btn.label"
+            :icon="btn.icon"
             flat
           />
         </q-card-actions>
@@ -50,10 +52,26 @@ export default {
   data () {
     return {
       buttonLabels: [
-        'Skills',
-        'Work History',
-        'Projects',
-        'Education'
+        {
+          label: 'Skills',
+          icon: 'fas fa-vial',
+          method: ''
+        },
+        {
+          label: 'Work History',
+          icon: 'fas fa-file-contract',
+          method: ''
+        },
+        {
+          label: 'Projects',
+          icon: 'fas fa-tools',
+          method: ''
+        },
+        {
+          label: 'Education',
+          icon: 'fas fa-book-open',
+          method: ''
+        }
       ]
     }
   }
