@@ -1,11 +1,42 @@
 <template>
-  <q-page class="flex flex-center">
-    test
-  </q-page>
+  <div class="q-gutter-sm absolute-center">
+    <q-card class="main-card">
+      <q-card-section>
+        <div class="text-h5">
+          <q-icon name="fas fa-address-card"/> Resume and Portfolio
+        </div>
+      </q-card-section>
+      <q-card-actions class="absolute-bottom">
+        <q-btn
+          v-for="(label, index) in buttonLabels"
+          :key="index"
+          :label="label"
+          flat
+        />
+      </q-card-actions>
+    </q-card>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+
+  data () {
+    return {
+      buttonLabels: [
+        'Skills',
+        'Work History',
+        'Projects',
+        'Education'
+      ]
+    }
+  }
 }
 </script>
+
+<style lang="sass">
+  .main-card
+    min-width: 800px
+    min-height: 400px
+</style>
