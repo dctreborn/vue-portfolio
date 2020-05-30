@@ -7,9 +7,19 @@
         </q-toolbar-title>
       </q-toolbar>
     </q-header> -->
-
     <q-page-container>
-      <router-view />
+      <q-space/>
+      <transition
+        mode="out-in"
+        appear-active-class="animated fadeIn"
+        leave-active-class="animated fadeOut"
+        :duration="350"
+      >
+        <router-view
+          class="fixed-center"
+        />
+      </transition>
+      <q-space/>
     </q-page-container>
   </q-layout>
 </template>
