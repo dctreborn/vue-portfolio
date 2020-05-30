@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute-center">
+  <div>
     <q-card class="main-card row">
       <div class="col-6">
         <q-card-section class="col-12">
@@ -36,6 +36,7 @@
             :label="btn.label"
             :icon="btn.icon"
             flat
+            @click="navigate(btn.path)"
           />
         </q-card-actions>
       </div>
@@ -66,24 +67,30 @@ export default {
         {
           label: 'Skills',
           icon: 'fas fa-vial',
-          method: ''
+          path: 'terminal'
         },
         {
           label: 'Work History',
           icon: 'fas fa-file-contract',
-          method: ''
+          path: 'inventory'
         },
         {
           label: 'Projects',
           icon: 'fas fa-tools',
-          method: ''
+          path: ''
         },
         {
           label: 'Education',
           icon: 'fas fa-book-open',
-          method: ''
+          path: ''
         }
       ]
+    }
+  },
+
+  methods: {
+    navigate (path) {
+      this.$router.push(`/${path}`)
     }
   }
 }
