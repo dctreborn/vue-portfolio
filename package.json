@@ -15,7 +15,7 @@
   "dependencies": {
     "@quasar/cli": "^1.0.7",
     "@quasar/extras": "^1.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "^2.26.0",
     "quasar": "^1.0.0"
   },
